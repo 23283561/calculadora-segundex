@@ -39,9 +39,9 @@ function calcularCoeficiente() {
     var parteSuperior = yA - yB;
     var parteInferior = xA - xB;
 
-    var m = parteSuperior / parteInferior
+    var m = parteSuperior / parteInferior;
 
-    document.getElementById("display").value = 'm = ${m}';
+    document.getElementById("display").value = `m = ${m}`;
 
 }
 
