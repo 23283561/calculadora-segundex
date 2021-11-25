@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULADORA SEGUNDEX</title>
+    <title>Calculadora Segundex</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/DistEntrePontoReta.css">
 </head>
+
 <body>
 
+    <nav>
+        <a href="index.html">Clássica</a>
+        <a href="equacaoDoisPontos.html">Equações Dois Pontos</a>
+        <a href="distanciaPontoEReta.html">Distância entre Ponto e Reta</a>
+        <a href="equacaoReduzida.html">Equação Reduzida</a>
+        <a href="posicaoRelativaRetas.html">Posição Relativa das Retas</a>
+    </nav>
 
-<nav>
-    <a href="index.html">Classica</a>
-    <a href="EquacoesEntreDoisPontos.html">Equacoes Dois Pontos</a>
-    <a href="DistEntrePontoReta.html">Distancia entre Ponto e Reta</a>
-    <a href="EquacaoReduzida.html">Equacao Reduzida</a>
-    <a href="PosicaoRelativaDasRetas.html">Posicao Relativa das Retas</a>
-</nav>
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display">
 
-<h1>Distancia Entre Ponto e Reta</h1>
+        <div class="pontos">
+            <label>Ponto A</label>
+            <div><span>x:</span><input type="number" class="ponto" id="X"></div>
+            <div><span>y:</span><input type="number" class="ponto" id="Y"></div>
+        </div>
+        <div class="Equacao">
+            <label>Equação</label>
+            <div><span>A:</span><input type="number" class="ponto" id="A"></div>
+            <div><span>B:</span><input type="number" class="ponto" id="B"></div>
+            <div><span>C:</span><input type="number" class="ponto" id="C"></div>
+        </div>
+        <div class="primeira-linha">
+            <button onclick="limpar()">Limpar</button>
+        </div>
+        <div class="botoes-calculo">
+            <button onclick="calcularpontoereta()">Distância de ponto e reta</button>
+        </div>
+    </div>
 
-
+    <script src="pontoereta.js"></script>
 </body>
+
 </html>
